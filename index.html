@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>弹性盒子</title>
+    <link rel="stylesheet" href="./css/flex.css">
+    <link rel="stylesheet" href="./jRange/jquery.range.css">
+    <script src="./js/jquery-1.12.2.min.js" charset="utf-8"></script>
+    <script src="./jRange/jquery.range-min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="box">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <h2>默认值</h2>
+    </div>
+    <div class="box fll">
+      <div class="item2"></div>
+      <div class="item2"></div>
+      <div class="item2"></div>
+    </div>
+    <form class="fll">
+      flex1:
+      <select id="flex" name="flex">
+        <option value="0 auto">0 auto</option>
+        <option value="1">1</option>
+        <option value="auto">auto</option>
+        <option value="0 0 auto">none</option>
+      </select><br>
+      flex2:
+      <select id="flex1" name="flex1">
+        <option value="0 1 auto">0 auto</option>
+        <option value="1 1 0%">1</option>
+        <option value="1 1 auto">auto</option>
+        <option value="0 0 auto">none</option>
+      </select><br>
+      flex3:
+      <select id="flex2" name="flex1">
+        <option value="0 auto">0 auto</option>
+        <option value="1">1</option>
+        <option value="auto">auto</option>
+        <option value="0 0 auto">none</option>
+      </select><br>
+      <h2>flex-flow:</h2>
+      flex-direction:
+      <select id="direction" name="direction">
+        <option value="row">row</option>
+        <option value="row-reverse">row-reverse</option>
+        <option value="column">column</option>
+        <option value="column-reverse">column-reverse</option>
+      </select><br>
+      flex-wrap:
+      <select id="wrap" name="wrap">
+        <option value="nowrap">nowrap</option>
+        <option value="wrap">wrap</option>
+        <option value="wrap-reverse">wrap-reverse</option>
+      </select><hr><br>
+      justifyContent:
+      <select id="justifyContent" name="justifyContent">
+        <option value="flex-start">flex-start</option>
+        <option value="flex-end">flex-end</option>
+        <option value="center">center</option>
+        <option value="space-between">space-between</option>
+        <option value="space-around">space-around</option>
+      </select><hr><br>
+      flex子项宽：
+      <input type="hidden" class="single-slider" value="200"/>
+    </form>
+    <script src="./js/flex.js" charset="utf-8"></script>
+  </body>
+</html>

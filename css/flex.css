@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.fll {
+  float: left;
+}
+
+.flr {
+  float: right;
+}
+
+.box {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 60%;
+  height: 200px;
+  background-color: #ccc;
+  border: 5px solid black;
+  /*设置特性盒子*/
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*对齐方式，默认flex-start*/
+  justify-content: flex-start;
+  /*排列方向，默认row*/
+  flex-direction: row;
+  /*是否换行，默认nowrap*/
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.box.fll {
+  margin-top: 10px;
+}
+
+.slider-container {
+  margin: 18px;
+}
+
+.item, .item2 {
+  width: 200px;
+  height:100%;
+}
+
+.item:nth-of-type(1), .item2:nth-of-type(1) {
+  background-color: green;
+}
+
+.item:nth-of-type(2), .item2:nth-of-type(2) {
+  background-color: red;
+}
+
+.item:nth-of-type(3), .item2:nth-of-type(3) {
+  background-color: blue;
+}
